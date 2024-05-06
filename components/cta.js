@@ -14,7 +14,7 @@ const CTA = () => {
 
             <div className='flex flex-col md:w-1/2 py-8 space-y-4'>
                 <h1 className='text-white text-3xl font-semibold'>Get 20% discount on your first order</h1>
-                <p className='text-[#e4e5ee] leading-16'>Craving delicious food delivered straight to your doorstep? Look no further! At Johannes, we're thrilled to welcome you with open arms and a special treat: a 20% discount on your very first order</p>
+                <p className='text-[#e4e5ee] leading-16'>Craving delicious food delivered straight to your doorstep? Look no further! At Johannes, we are thrilled to welcome you with open arms and a special treat: a 20% discount on your very first order</p>
                 <button className='bg-white w-64 rounded-md py-4 font-semibold text-[#233a95]'>Start your order now</button>
 
             </div>
