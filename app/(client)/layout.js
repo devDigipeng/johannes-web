@@ -1,7 +1,10 @@
+import { CartProvider } from "../../contexts/CartContext";
 
 import "./globals.css";
+import Navbar from "../../components/Navbar"
+import Footer from "../../components/footer"
+import CTA from "../../components/cta"
 
-// const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Johaness",
@@ -11,7 +14,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body >{children}</body>
-    </html>
+        <body>
+        <CartProvider>
+          <Navbar />
+          {children}
+          <CTA />
+          <Footer />
+        </CartProvider>
+        </body>
+      </html>
   );
 }
