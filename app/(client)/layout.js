@@ -1,7 +1,7 @@
 import { CartProvider } from "../../contexts/CartContext";
 
 import "./globals.css";
-import Navbar from "../../components/Navbar"
+import Navbar from "../../components/navbar/Navbar"
 import Footer from "../../components/footer"
 import CTA from "../../components/cta"
 

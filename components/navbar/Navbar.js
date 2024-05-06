@@ -2,7 +2,7 @@
 import React, {useState} from 'react';
 import Link from 'next/link';
 import Image from "next/image";
-import{ useCart } from '../contexts/CartContext';
+import{ useCart } from '../../contexts/CartContext';
 import { BsCart3 } from "react-icons/bs";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { usePathname } from "next/navigation";
