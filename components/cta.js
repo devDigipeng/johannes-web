@@ -4,18 +4,19 @@ import { IoFastFoodOutline } from "react-icons/io5";
 import { MdDeliveryDining } from "react-icons/md";
 import { TbDiscount2 } from "react-icons/tb";
 import { TbMoneybag } from "react-icons/tb";
+import Link from 'next/link'
 
 
 const CTA = () => {
   return (
     <div>
-        <div className='bg-[#233a95] mb-8 '>
+        <div className='bg-[#F58634] mb-8 '>
             <div className='flex justify-between flex-col md:flex-row pt-16 pl-16'>
 
-            <div className='flex flex-col md:w-1/2 py-8 space-y-4'>
-                <h1 className='text-white text-3xl font-semibold'>Get 20% discount on your first order</h1>
+            <div className='flex flex-col md:w-1/2 py-8 space-y-4 pr-8 md:pl-12 '>
+                <h1 className='text-white text-5xl font-semibold'>Get 20% discount on your first order</h1>
                 <p className='text-[#e4e5ee] leading-16'>Craving delicious food delivered straight to your doorstep? Look no further! At Johannes, we are thrilled to welcome you with open arms and a special treat: a 20% discount on your very first order</p>
-                <button className='bg-white w-64 rounded-md py-4 font-semibold text-[#233a95]'>Start your order now</button>
+                <Link href="/shop" className='bg-white w-64 rounded-full py-4 font-semibold text-center text-[#F58634]'>Start your order now</Link>
 
             </div>
             <div>
