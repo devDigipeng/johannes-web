@@ -4,6 +4,7 @@ import Product from "../../app/(client)/product/page"
 import Link from "next/link";
 import { BsArrowRight } from "react-icons/bs";
 import Testimony from "../../components/testimony"
+import HomeProduct from '../../app/(client)/product/homeProduct'
 
 const Johannes = () => {
   return (
@@ -28,10 +29,12 @@ const Johannes = () => {
 
       </div>
 
+      
+
 
      
 
-        <div className='flex justify-between flex-col md:flex-row md:mx-10'>
+        {/* <div className='flex justify-between flex-col md:flex-row md:mx-10'>
 
         <div className=' flex flex-col space-y-16 md:w-3/12 mx-8'>
 
@@ -89,20 +92,16 @@ const Johannes = () => {
           </div>
           <Product />
 
-          <div className='flex gap-8 my-8'>
-          <Image src="/Banner1.png" className='rounded-lg ' width={500} height={500} />
-          <Image src="/Banner2.png" className='rounded-lg ' width={500} height={500} />
-          </div>
-
+    
         </div>
 
         </div>
 
 
           
-      </div>
+      </div> */}
 
-      <div className='flex justify-between mx-24 my-16'>
+      {/* <div className='flex justify-between mx-24 my-16'>
         <div className='border rounded-lg p-8 text-center'>
           <Image src="/Snacks2.png" width={300} height={300} />
           <h1 className='text-2xl font-medium'>Tasty Snacks</h1>
@@ -118,6 +117,27 @@ const Johannes = () => {
           <h1 className='text-2xl font-medium'>Chilled Drinks</h1>
           <p>21 Items</p>
         </div>
+      </div> */}
+
+      <div className='flex flex-col justify-center items-center '>
+        <div className='text-center my-8'>
+          <h2 className='font-bold text-4xl mb-2'>First on our Menu</h2>
+          <p className='md:px-8 text-[#1F1F1F] '>
+            Begin your flavor adventure with our <strong>First Bites</strong> selection. 
+            From appetizers <br></br>to signature dishes, each one bursts with 
+            taste. Come explore and savor <br></br> the difference!
+          </p>
+        </div>
+
+        <HomeProduct />
+
+        <div>
+
+            <Link href="/" className='border bg-[#ED3237] text-white rounded-full hover:bg-blue-600 transition duration-300 px-12 py-4 flex items-center justify-between  my-12'>
+              View All
+              <BsArrowRight className='ml-4'/>
+            </Link>
+            </div>
       </div>
 
       <Testimony />

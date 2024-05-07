@@ -55,15 +55,15 @@ const Product = ({ product }) => {
         </div>
 
         <div className="flex items-center mb-2">
-        <span className="text-gray-600 mr-4">Qty:</span>
-        <button onClick={decreaseQuantity} className="border border-gray-300 rounded-l-full px-2 py-1 mr-4 hover:bg-[red] hover:text-white"><FaMinus size={10} /></button>
-        <span>{quantity}</span>
-        <button onClick={increaseQuantity} className="border border-gray-300 rounded-r-full px-3 py-1 ml-4 hover:bg-[red] hover:text-white"><FaPlus size={10} /></button>
-      </div>
+          <span className="text-gray-600 mr-4">Qty:</span>
+         <button onClick={decreaseQuantity} className="border border-gray-300 rounded-l-full px-2 py-1 mr-4 hover:bg-[red] hover:text-white"><FaMinus size={10} /></button>
+         <span>{quantity}</span>
+          <button onClick={increaseQuantity} className="border border-gray-300 rounded-r-full px-3 py-1 ml-4 hover:bg-[red] hover:text-white"><FaPlus size={10} /></button>
+        </div>
       
-      <button onClick={handleAddToCart} className="bg-blue-500 w-full  text-white py-1 my-4 px-4 rounded-full hover:bg-blue-600 transition duration-300">
-        Add to Cart
-      </button>
+         <button onClick={handleAddToCart} className="bg-blue-500 w-full  text-white py-1 my-4 px-4 rounded-full hover:bg-blue-600 transition duration-300">
+           Add to Cart
+          </button>
       </div>
     </div>
   );
