@@ -123,7 +123,7 @@ const Johannes = () => {
         <div className='text-center my-8'>
           <h2 className='font-bold text-4xl mb-2'>First on our Menu</h2>
           <p className='md:px-8 text-[#1F1F1F] '>
-            Begin your flavor adventure with our "First Bites" selection. 
+            Begin your flavor adventure with our <strong>First Bites</strong> selection. 
             From appetizers <br></br>to signature dishes, each one bursts with 
             taste. Come explore and savor <br></br> the difference!
           </p>
