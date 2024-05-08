@@ -6,25 +6,28 @@ import { BsArrowRight } from "react-icons/bs";
 import Testimony from "../../components/testimony"
 import HomeProduct from '../../app/(client)/product/homeProduct'
 
+
 const Johannes = () => {
+
+
   return (
     <div>
-      <div className=' m-20 rounded-lg flex justify-around items-center px-64' style={{
+      <div className=' md:m-20 m-4 rounded-lg flex justify-around items-center md:px-64 px-8' style={{
                 height: "400px",
                 backgroundImage: `url(/WebBanner2.png)`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}>
-                <div className=''>
-                  <div className="cprimary font-bold text-[58px] leading-[52px] inset">
+                <div className='text-center'>
+                  <div className="cprimary font-bold md:text-[64px] text-3xl md:leading-[52px] inset">
                   Satisfy Your Sweet Cravings Here!
                   </div>
-                  <div className=' text-[#888080] my-4 pr-24'>
+                  <div className=' text-[#888080] my-6 md:pr-24  '>
 
                   Savor our artisanal delights, meticulously crafted for an unforgettable dining journey filled with passion and flavor!
                   </div>
 
-                    <botton className="bg-[#ed3237] text-white rounded-full py-2 mt-8 font-medium px-4 ">Shop Now</botton>
+                    <Link href='/shop' className="bg-[#ed3237] text-white rounded-full py-2 mt-8 font-medium px-4 ">Shop Now</Link>
                 </div>
 
       </div>
@@ -118,6 +121,16 @@ const Johannes = () => {
           <p>21 Items</p>
         </div>
       </div> */}
+
+      <div className='flex flex-col md:flex-row space-y-8 justify-between items-center md:mx-24 mx-8'>
+        <div className='flex '>
+
+        <Image src='/loaf.jpg' className='rounded-lg mb-4'  width={600} height={100}/>
+        </div>
+        <Image src='/beef.jpg' className='rounded-lg' width={600} height={100}/>
+
+        {/* <Image src='/backer.png'  width={350} height={100}/> */}
+      </div>
 
       <div className='flex flex-col justify-center items-center '>
         <div className='text-center my-8'>
