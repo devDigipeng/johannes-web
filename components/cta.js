@@ -26,29 +26,32 @@ const CTA = () => {
             </div>
         </div>
 
-    <div className='container mx-auto flex flex-wrap justify-between'>
+    <div className='container mx-auto flex flex-wrap space-y-8 items-center justify-between'>
+      <div>
+
+      </div>
   <div className='w-full sm:w-1/2 lg:w-1/4 mb-4'>
-    <div className='flex flex-col gap-4 items-center border-r pr-8 font-medium'>
-      <IoFastFoodOutline size={30}/>
-      <p>Everyday fresh products</p>
+    <div className='flex justify-center gap-4 items-center border-r pr-8 font-medium'>
+      <Image src='/icon1.svg' width={30} height={30}/>
+      <p className='text-[#1F1F1F] text-2xl font-medium'>Quality Food</p>
     </div>
   </div>
   <div className='w-full sm:w-1/2 lg:w-1/4 mb-4'>
-    <div className='flex flex-col gap-4 items-center border-r pr-8 font-medium'>
-      <MdDeliveryDining size={30}/>
-      <p>Free delivery for orders over ₦10,000</p>
+    <div className='flex justify-center gap-4 items-center border-r pr-8 font-medium'>
+    <Image src='/icon2.svg' width={30} height={30}/>
+      <p className='text-[#1F1F1F] text-2xl font-medium'>Premium Serve</p>
     </div>
   </div>
   <div className='w-full sm:w-1/2 lg:w-1/4 mb-4'>
-    <div className='flex flex-col gap-4 items-center border-r pr-8 font-medium'>
-      {/* <TbDiscount2 size={30}/> */}
-      <p>Daily Mega Discounts</p>
+    <div className='flex justify-center gap-4 items-center border-r pr-8 font-medium'>
+    <Image src='/icon3.svg' width={30} height={30}/>
+      <p className='text-[#1F1F1F] text-2xl font-medium'>Fast Delivery</p>
     </div>
   </div>
   <div className='w-full sm:w-1/2 lg:w-1/4 mb-4'>
-    <div className='flex flex-col gap-4 items-center border-r pr-8 font-medium'>
-      <TbMoneybag size={30}/>
-      <p>Best price on the market</p>
+    <div className='flex justify-center gap-4 items-center border-r pr-8 font-medium'>
+    <Image src='/icon4.svg' width={30} height={30}/>
+      <p className='text-[#1F1F1F] text-2xl font-medium'>24/7 service</p>
     </div>
   </div>
 </div>
