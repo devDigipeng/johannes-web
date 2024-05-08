@@ -9,7 +9,7 @@ const SearchResults = () => {
 
     return (
         <div>
-            <h1>Search Results for "{query}"</h1>
+            {/* <h1>Search Results for "{query}"</h1> */}
         </div>
     );
 };
