@@ -31,7 +31,7 @@ const Footer = () => {
   return (
     <footer className=" text-[#222222B2] px-3 py-8 lg:px-[50px] font-[JetBrains Mono]">
       <div className="h-[1px] mb-11" style={footerStyle}></div>
-      <div className="container mx-auto grid grid-cols-2 md:grid-cols-5 gap-8 my-24 ">
+      <div className="container mx-auto flex justify-between items-center flex-col md:flex-row gap-8 my-24 ">
 
        
         <Link href="/" className="flex items-start w-fit col-span-2 md:col-span-1">
@@ -39,7 +39,7 @@ const Footer = () => {
             className="relative w-[100%]"
             src="/logo.png"
             alt="Johannes"
-            width={200}
+            width={100}
             height={20}
             priority
           />

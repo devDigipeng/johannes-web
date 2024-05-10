@@ -1,9 +1,5 @@
 import React from 'react'
 import Image from 'next/image'
-import { IoFastFoodOutline } from "react-icons/io5";
-import { MdDeliveryDining } from "react-icons/md";
-import { TbDiscount2 } from "react-icons/tb";
-import { TbMoneybag } from "react-icons/tb";
 import Link from 'next/link'
 
 

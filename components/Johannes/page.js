@@ -122,7 +122,7 @@ const Johannes = () => {
         </div>
       </div> */}
 
-      <div className='flex flex-col md:flex-row space-y-8 justify-between items-center md:mx-24 mx-8'>
+      <div className='flex flex-col md:flex-row justify-between items-center md:mx-24 mx-8'>
         <div className='flex '>
 
         <Image src='/loaf.jpg' className='rounded-lg mb-4'  width={600} height={100}/>

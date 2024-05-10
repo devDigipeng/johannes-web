@@ -56,7 +56,7 @@ const SingleProduct = ({image, rating, price, title, product}) => {
                     )}
                 
                 
-                {/* <botton onClick={handleAddToCart} className="bg-[#ED3237] rounded-full px-6 py-1 cursor-pointer text-white">Buy Now</botton> */}
+               
             </div>
             <div className='flex justify-between'>
                 <div className='flex gap-2'>
