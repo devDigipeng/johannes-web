@@ -17,7 +17,10 @@ export default function RootLayout({ children }) {
         <body>
         <CartProvider>
           <Navbar />
+          <div className="pt-[150px]">
+
           {children}
+          </div>
           <CTA />
           <Footer />
         </CartProvider>

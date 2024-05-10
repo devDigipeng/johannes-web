@@ -36,9 +36,9 @@ const Navigation = () => {
   const [searchQuery, setSearchQuery] = useState('');
     const router = useRouter();
 
-    // const totalPrice = cartItems.reduce((total, item) => {
-    //   return total + (item.price * item.quantity);
-    // }, 0);
+    const totalPrice = cartItems.reduce((total, item) => {
+      return total + (item.price * item.quantity);
+    }, 0);
 
     const handleSearch = (e) => {
         e.preventDefault();
@@ -51,7 +51,7 @@ const Navigation = () => {
   const navBarList = navlist.filter((element) => element.path !== "/menu");
 
   return (
-    <nav >
+    <nav className='fixed top-0 w-full z-10 bg-white '>
       <div className="flex justify-between items-center py-4 md:px-20 px-6">
 
       <Link className="text-xl font-semibold  " href="/">
@@ -76,7 +76,7 @@ const Navigation = () => {
 
       <div className="flex gap-4 items-center">
 
-      {/* <h2 className='font-bold text-2xl'>₦{totalPrice}</h2> */}
+      <h2 className='font-bold text-2xl'>₦{totalPrice}.00</h2>
       <div className='relative'>
 
         <Link href="/cart" className=' '>
@@ -100,21 +100,21 @@ const Navigation = () => {
         
 
         {/* Desktop View */}
+        <div className='lg:flex hidden'>
+
+<Link href="/menu ">
+    <button className="bg-[#ED32371A] rounded-full  text-[#ed3237] font-bold  px-6 py-2 ">
+      Our Menu
+    </button>
+  </Link>
+  </div>
         <div className="">
 
        
 
 
           <ul className="lg:flex hidden justify-around gap-6 items-center">
-            <div className='mr-32'>
-
-
-          <Link href="/menu ">
-              <button className="bg-[#ED32371A] rounded-full  text-[#ed3237] font-bold  px-6 py-2 ">
-                Our Menu
-              </button>
-            </Link>
-            </div>
+           
 
             {navBarList.map((list, index) => (
               <Link href={list.path} key={index}>
